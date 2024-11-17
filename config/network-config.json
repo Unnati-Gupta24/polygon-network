@@ -1,0 +1,13 @@
+{
+  "networkName": "CustomPolygonNetwork",
+  "chainId": 100,
+  "blockTime": 2,
+  "validatorCount": 4,
+  "monitoringEnabled": true,
+  "backupInterval": 3600,
+  "alertThresholds": {
+    "highGasUsage": 80,
+    "peerCount": 2,
+    "blockDelay": 5
+  }
+}

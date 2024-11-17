@@ -1,0 +1,20 @@
+groups:
+  - name: polygon_alerts
+    rules:
+      - alert: HighGasUsage
+        expr: polygon_gas_used / polygon_gas_limit > 0.8
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: High gas usage detected
+          description: Gas usage is above 80% for more than 5 minutes
+
+      - alert: LowPeerCount
+        expr: polygon_peer_count < 2
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: Low peer count
+          description: Node has less than 2 peers for more than 5 minutes

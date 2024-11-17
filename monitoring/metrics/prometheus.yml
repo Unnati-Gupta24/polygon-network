@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'polygon-nodes'
+    static_configs:
+      - targets: ['localhost:10002', 'localhost:20002', 'localhost:30002', 'localhost:40002']

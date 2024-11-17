@@ -1,0 +1,39 @@
+{
+  "name": "polygon-custom-chain",
+  "genesis": {
+    "nonce": "0x0000000000000000",
+    "timestamp": "0x0",
+    "gasLimit": "0x500000",
+    "difficulty": "0x1",
+    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "coinbase": "0x0000000000000000000000000000000000000000",
+    "alloc": {
+      "0x1111111111111111111111111111111111111111": {
+        "balance": "0x1000000000000000000"
+      }
+    },
+    "number": "0x0",
+    "gasUsed": "0x0",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "params": {
+    "chainId": 100,
+    "engine": {
+      "ibft": {
+        "epochSize": 3600,
+        "blockTime": 2
+      }
+    },
+    "forks": {
+      "homestead": 0,
+      "byzantium": 0,
+      "constantinople": 0,
+      "petersburg": 0,
+      "istanbul": 0,
+      "EIP150": 0,
+      "EIP158": 0,
+      "EIP155": 0,
+      "london": 0
+    }
+  }
+}
